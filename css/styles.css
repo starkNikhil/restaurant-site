@@ -2,7 +2,6 @@
   font-size: 16px;
   font-family: 'oxygen', sans-serif;
   color: #fff;
-  /* background-color: #61122f;   */
 }
 
 body{
@@ -46,7 +45,6 @@ body{
   text-transform: uppercase;
   font-size: 0.7em;
   margin-top: 15px;
-  /* color: #000; */
 }
 .navbar-brand p span{ /*Str-K*/
   vertical-align: middle;
@@ -83,3 +81,204 @@ background: #E7E7E7;
   padding-right: 15px;
   text-align: right;
 }
+
+.navbar-header button.navbar-toggle, .navbar-header .icon-bar{
+  border: 1px solid #61122f;
+}
+
+.navbar-header button.navbar-toggle{
+  clear: left;
+}
+/* Ending Header */
+/* Footer */
+.panel-footer{
+  margin-top: 30px;
+  padding-top: 35px;
+  padding-bottom: 30px;
+  background-color: #222;
+  border-top:0 ;
+}
+.panel-footer div.row{
+  margin-bottom: 35px;
+}
+#hours, #address{
+  line-height: 2;
+}
+#hours > span ,#address > span{
+font-size: 1.3em;
+}
+#address p{
+  color: #557c3e;
+  font-size: .8em;
+  line-height: 1.8;
+}
+#testimonials{
+  font-style: italic;
+}
+#testimonials p:nth-child(2){
+  margin-top: 25px;
+}
+
+/* Home page styles */
+#menu-tile, #special-tile, #map-tile{
+  height: 250px;
+  width: 100%;
+  margin-bottom:15px;
+  position: relative;
+  border: 2px solid #3F0C1F;
+  overflow: hidden;
+}
+
+#menu-tile:hover, #special-tile:hover, #map-tile:hover{
+  box-shadow: 0px 1px 5px 1px #cccccc;
+}
+#menu-tile{
+background: url('../images/menu-tile.jpg') no-repeat;
+background-position: center;
+}
+
+#special-tile{
+  background: url('../images/specials-tile.jpg') no-repeat;
+  background-position: center;
+}
+#menu-tile span, #special-tile span, #map-tile span{
+position: absolute;
+bottom: 0;
+right: 0;
+width: 100%;
+text-align: center;
+font-size: 1.6em;
+text-transform:uppercase ;
+background-color: #000;
+color: #fff;
+opacity: .8;
+}
+/* End Home page */
+.container .jumbotron{
+  box-shadow: 0 0 50px #3F0C1F;
+  border: 2px solid #3F0C1F;
+}
+
+/* Large Devices */
+@media (min-width:1200px){
+  .container .jumbotron{
+  background: url("../images/jumbotron_1200.jpg") no-repeat;
+  height: 675px;
+ 
+}
+
+}
+
+/* Medium Devices only */
+@media (min-width: 992px) and (max-width:1199px){
+/* Header */
+  #logo-img{
+    background: url('../images/restaurant-logo_medium.png');
+    width: 100px;
+    height: 100px;
+    margin: 5px 5px 5px 0;
+  }
+  .container .jumbotron{
+    background: url("../images/jumbotron_992.jpg") no-repeat;
+    height: 558px;
+    
+}
+}
+/* Small Devices */
+@media (min-width:768px) and (max-width:991px){
+  .container .jumbotron{
+    background: url("../images/jumbotron_768.jpg") no-repeat;
+    height: 432px;
+    
+}
+}
+/* Extra small Devices */
+
+@media (max-width: 767px){
+/* Header */
+.navbar-brand{
+  padding: 10px;
+  height: 80px;
+}
+
+.navbar-brand h1{ /*Restaurant Name*/
+  padding-top: 10px;
+  font-size: 5vw;
+}
+.navbar-brand p{
+  /* Kosher Cert */
+  text-transform: uppercase;
+  font-size: .6em;
+  margin-top: 12px;
+}
+.navbar-brand p img {
+  /* Star K */
+  height: 20px;
+}
+#collapsable-nav a{
+  /* Collapseable nav menu glyph */
+  font-size: 1.2em;
+}
+
+#collapsable-nav a span{
+  font-size: 1em;
+  margin-right: 5px;
+  
+}
+#call-btn >a{
+  font-size: 1.5em;
+  display: block;
+  margin: 0 20px;
+  padding: 10px;
+  border: 2px solid #fff;
+  background-color: #f6b319;
+  color: #951c49;
+
+}
+#xs-deliver{
+  margin-top: 5px;
+  font-size: 0.7em;
+  letter-spacing: .1em;
+  text-transform: uppercase;
+}
+/* End header */
+/* footer */
+.panel-footer section{
+  margin-bottom: 30px;
+  text-align: center;
+}
+.panel-footer section:nth-child(3){
+  margin-bottom: 0;
+}
+.panel-footer section hr{
+  width: 50%;
+}
+
+.container .jumbotron{
+  padding: 0;
+  margin-top: 30px;
+  
+}
+#menu-tile, #special-tile{
+  width: 360px;
+  margin: 0 auto 15px;
+}
+
+}
+/* Super Extra Small e.g. Iphone 4 */
+@media (max-width:479px){
+  /* Header */
+  .navbar-brand h1{
+    /* Restaurant Name */
+    padding-top: 5px;
+    font-size: 6vw
+  }
+/* Home Page */
+#menu-tile, #special-tile{
+  width: 280px;
+  margin: 0 auto 15px;
+
+}
+
+}
+
